@@ -1,0 +1,119 @@
+
+// estilos de las páginas del sitio
+
+// index
+.banner img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.secciones {
+    @include seccion;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 8px;
+
+            a {
+                color: $rojo;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.video-seccion {
+    @include seccion;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+}
+
+// paginas internas - uso el mixin
+.page-header {
+    @include page-header;
+}
+
+// conocenos
+.conocenos-contenido {
+    @include seccion;
+
+    h2 {
+        margin: 24px 0 12px;
+    }
+}
+
+.logo_conocenos {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+// indumentaria
+.productos-indumentaria {
+    @include seccion;
+
+    .producto-item {
+        margin-bottom: 40px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+
+        h3 {
+            margin-bottom: 12px;
+        }
+
+        form {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        label {
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        select {
+            padding: 4px 8px;
+            border: 1px solid #ccc;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+// clases de imagenes - originales del alumno
+.remera { width: 200px; height: auto; }
+.campera { width: 200px; height: auto; }
+.sueter { width: 200px; height: auto; }
+.media { width: 200px; height: auto; }
+
+// proximamente - zapatillas y accesorios
+.proximamente {
+    @include seccion(60px);
+    text-align: center;
+
+    p {
+        margin-bottom: 12px;
+        color: $texto-gris;
+    }
+
+    a {
+        color: $rojo;
+        font-weight: bold;
+    }
+}

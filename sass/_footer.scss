@@ -1,0 +1,28 @@
+// _footer.scss
+
+footer {
+    background-color: $negro;
+    color: #aaa;
+    text-align: center;
+    padding: 30px 20px;
+
+    p {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li a {
+            color: #aaa;
+
+            &:hover {
+                color: $rojo;
+            }
+        }
+    }
+}

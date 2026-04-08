@@ -1,0 +1,33 @@
+
+
+#mi-nav {
+    background-color: $negro;
+
+    .navbar-brand {
+        color: $blanco;
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    .nav-link {
+        color: $blanco;
+
+        &:hover,
+        &.active {
+            color: $rojo;
+        }
+    }
+}
+
+.logo-nav {
+    height: 40px;
+    width: auto;
+}
+
+.horario {
+    background-color: $negro;
+    color: $texto-gris;
+    text-align: center;
+    padding: 6px;
+    font-size: 0.85rem;
+}

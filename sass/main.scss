@@ -1,0 +1,55 @@
+
+
+@import 'variables';
+@import 'mixins';
+@import 'navbar';
+@import 'footer';
+@import 'paginas';
+
+// reset 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fuente;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// clase rojo - 
+.rojo {
+    color: $rojo;
+}
+
+// responsive
+@media (max-width: 768px) {
+    .banner img {
+        margin: 20px auto;
+    }
+
+    .producto-item form {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_conocenos {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header h1 {
+        font-size: 1.5rem;
+    }
+}
